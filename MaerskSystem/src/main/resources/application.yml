@@ -1,0 +1,8 @@
+spring:
+  data:
+    cassandra:
+      keyspace-name: maersk_data
+      contact-points: 127.0.0.1
+      port: 8081
+      local-datacenter: datacenter1
+      schema-action: NONE
