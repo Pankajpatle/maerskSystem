@@ -2,6 +2,10 @@ package com.maersk.model;
 
 import java.util.Date;
 import java.util.UUID;
+
+import org.springframework.data.cassandra.core.mapping.PrimaryKey;
+import org.springframework.data.cassandra.core.mapping.Table;
+
 /*
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
@@ -13,10 +17,10 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-//@Table
+@Table
 public class Container {
 
-	//@PrimaryKey
+	@PrimaryKey
 	private UUID id;
 	private ContainerType containerType; 
 	private String origin;
